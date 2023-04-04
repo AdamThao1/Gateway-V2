@@ -1,0 +1,206 @@
+/* everything below is the navigation bar */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: royalblue;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+#logo{
+  /* This code changes the letters and spacing*/
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 26px;
+  padding: 14px 16px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 14px 16px;
+}
+
+.nav-links li a:hover:not(.active) {
+  /*hovering over the nav-links turns yellow*/
+  background-color: orange;
+}
+
+.active {
+  background-color: black;
+}
+/* Everthing above this code is the navigation bar */
+
+.header::before {
+  /*This is the home background*/
+  background-image: url(https://www.savingyoudinero.com/wp-content/uploads/2020/01/Carne-Asada-Tacos.jpeg);
+  top: 8vh;
+  bottom: 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  opacity: 0.70;
+  content: "";
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.text-box {
+  width: 90%;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 30px;
+}
+
+/* This code below is the bottom of page with links(footer)*/
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  background-color: royalblue;
+}
+
+.fa {
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  color: black;
+}
+
+.fa:hover {
+  background-color: orange;
+}
+
+/*MENUS IMAGES ETC*/
+
+.food-menu {
+  /* section */
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 300px;
+}
+
+.food-menuh2{
+  padding: 100px;
+}
+.row {
+  /*row of menu*/
+  display: inline-block;
+  margin-top: 5%;
+
+}
+.food {
+  /*This is ur foods in the menu */
+  flex-wrap: wrap;
+  border: solid 2px black;
+  padding-bottom: 10px;
+  position: relative;
+  overflow: scroll;
+}
+
+.food-menu img {
+  height: 100%;
+  width: 100%;
+}
+
+/*Contact page below*/
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type="submit"] {
+  background-color: red;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: green;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+}
+.contact-page-header{
+  text-align: center;
+}
+/*End of contact page.*/
+
+/*start of media queries*/
+/*for phones below*/
+@media only screen and (max-width: 600px){
+#logo{
+  display: none;
+}
+
+h1{
+  padding: 50px;
+
+}
+.food-menu{
+  padding-bottom: 20px;
+}
+.contact-page-header{
+  padding: 10px
+}
+
+.food-menu img{
+  height: 200px;
+}
+
+}
+
+/*for tablets*/
+@media only screen and (min-width: 768px){
+.food-menu{
+  padding-bottom: 150px;
+}
+.container{
+  padding-bottom: 30px;
+}
+.food-menu img{
+  height: 450px;
+}
+}
