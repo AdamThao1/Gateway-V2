@@ -25,7 +25,6 @@ nav {
   letter-spacing: 3px;
   font-weight: bold;
   font-size: 26px;
-  padding: 14px 16px;
 }
 
 .nav-links a {
@@ -50,8 +49,8 @@ nav {
 .header::before {
   /*This is the home background*/
   background-image: url(https://www.savingyoudinero.com/wp-content/uploads/2020/01/Carne-Asada-Tacos.jpeg);
-  top: 8vh;
-  bottom: 0;
+  top: 8.5vh;
+  bottom: .5vh;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -201,6 +200,6 @@ h1{
   padding-bottom: 30px;
 }
 .food-menu img{
-  height: 450px;
+  height: 250px;
 }
 }
